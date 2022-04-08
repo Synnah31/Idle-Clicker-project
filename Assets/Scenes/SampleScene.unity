@@ -238,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -597188345251438812, guid: 0a1a1f09a30ed7346ac1962902d68154, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -597188345251438812, guid: 0a1a1f09a30ed7346ac1962902d68154, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -981,6 +981,9 @@ MonoBehaviour:
   ClicksTotalText: {fileID: 1465541850}
   _moneyView: {fileID: 1465541852}
   _joyUpgradePriceView: {fileID: 1326656935}
+  _sadUpgradePriceView: {fileID: 0}
+  _fearUpgradePriceView: {fileID: 0}
+  _angerUpgradePriceView: {fileID: 0}
   AutoClicksPerSecond: 1
   MinimumClicksToUnlockUpgrade: 20
 --- !u!4 &1602410560
