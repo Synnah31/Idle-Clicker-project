@@ -25,12 +25,30 @@ public class IdleGModel
     {
         return joyPriceUpgrade;
     }
+    public IntObservable GetSadPriceUpgrade()
+    {
+        return sadPriceUpgrade;
+    }
+    public IntObservable GetFearPriceUpgrade()
+    {
+        return fearPriceUpgrade;
+    }
+    public IntObservable GetAngerPriceUpgrade()
+    {
+        return angerPriceUpgrade;
+    }
 
     public IdleGModel()
     {
         money = new IntObservable(0);
         joyIncome = new IntObservable(10);
         joyPriceUpgrade = new IntObservable(100);
+        sadIncome = new IntObservable(100);
+        sadPriceUpgrade = new IntObservable(1500);
+        fearIncome = new IntObservable(400);
+        fearPriceUpgrade = new IntObservable(20000);
+        angerIncome = new IntObservable(1000);
+        angerPriceUpgrade = new IntObservable(100000);
     }
 
     internal void IncrementJoy()

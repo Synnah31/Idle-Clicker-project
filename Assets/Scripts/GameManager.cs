@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     private IdleGModel _model;
     [SerializeField] IntView _moneyView;
     [SerializeField] IntView _joyUpgradePriceView;
+    [SerializeField] IntView _sadUpgradePriceView;
+    [SerializeField] IntView _fearUpgradePriceView;
+    [SerializeField] IntView _angerUpgradePriceView;
     float TotalClicks;
     bool HasUpgrade = false;
 
@@ -31,10 +34,12 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        //IdleGModel.GetScore().Subscribe(ScoreView);
         _model = new IdleGModel();
         _model.GetMoney().Subscribe(_moneyView);
         _model.GetJoyPriceUpgrade().Subscribe(_joyUpgradePriceView);
+        _model.GetSadPriceUpgrade().Subscribe(_sadUpgradePriceView);
+        _model.GetFearPriceUpgrade().Subscribe(_fearUpgradePriceView);
+        _model.GetAngerPriceUpgrade().Subscribe(_angerUpgradePriceView);
     }
 
     private void Update()
@@ -50,5 +55,17 @@ public class GameManager : MonoBehaviour
     public void OnClickUpgradeJoy()
     {
         _model.IncrementJoy();
+    }
+    public void OnClickUpgradeSad()
+    {
+        _model.IncrementSad();
+    }
+    public void OnClickUpgradeFear()
+    {
+        _model.IncrementFear();
+    }
+    public void OnClickUpgradeAnger()
+    {
+        _model.IncrementAnger();
     }
 }
