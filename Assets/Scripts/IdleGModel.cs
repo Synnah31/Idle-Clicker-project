@@ -16,15 +16,23 @@ public class IdleGModel
     private IntObservable fearPriceUpgrade;
     private IntObservable angerIncome;
     private IntObservable angerPriceUpgrade;
+
+    private int joyUpgradeCounter;
     public IntObservable GetMoney()
     {
         return money;
+    }
+
+    public void AddMoney(int deltaMoney)
+    {
+        money.Add(deltaMoney);
     }
 
     public IntObservable GetJoyPriceUpgrade()
     {
         return joyPriceUpgrade;
     }
+    
     public IntObservable GetSadPriceUpgrade()
     {
         return sadPriceUpgrade;

@@ -17,11 +17,7 @@ public class GameManager : MonoBehaviour
 
     public int AutoClicksPerSecond;
     public int MinimumClicksToUnlockUpgrade;
-    public void AddMoney()
-    {
-        _model.GetMoney().Add(1);
-
-    }
+ 
 
     public void AutoClickUpgrade()
     {
@@ -52,9 +48,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void BasicClick()
+    {
+        _model.AddMoney(1);
+    }
     public void OnClickUpgradeJoy()
     {
-        _model.IncrementJoy();
+        if(_model.GetMoney().GetValue() >= _model.GetJoyPriceUpgrade().GetValue())
+        {
+            _model.AddMoney(- _model.GetJoyPriceUpgrade().GetValue());
+            _model.IncrementJoy();
+        }
+        
     }
     public void OnClickUpgradeSad()
     {
