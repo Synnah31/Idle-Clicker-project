@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 19e021afcef05e84794db8aba920778a
+guid: 5b9407ef94e89f44e8013d3a44180776
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 525112608177726906
-    second: ConceptButtonSad_0
+      213: 4503639010174666579
+    second: ConceptButtonSadSprite_0
   - first:
-      213: 7649792041430793626
-    second: ConceptButtonSad_1
+      213: -3150007688265243054
+    second: ConceptButtonSadSprite_1
+  - first:
+      213: -5442878727259634857
+    second: ConceptButtonSadSprite_2
+  - first:
+      213: -619456299992740082
+    second: ConceptButtonSadSprite_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,11 +103,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ConceptButtonSad_0
+      name: ConceptButtonSadSprite_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
+        x: 2
+        y: 39
         width: 59
         height: 30
       alignment: 0
@@ -111,18 +117,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab5238d8223994700800000000000000
-      internalID: 525112608177726906
+      spriteID: 3578d0681d3208e30800000000000000
+      internalID: 4503639010174666579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ConceptButtonSad_1
+      name: ConceptButtonSadSprite_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 2
+        x: 63
+        y: 39
         width: 59
         height: 30
       alignment: 0
@@ -132,8 +138,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9db713d455892a60800000000000000
-      internalID: 7649792041430793626
+      spriteID: 256633d62bce844d0800000000000000
+      internalID: -3150007688265243054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConceptButtonSadSprite_2
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753c82a92a20774b0800000000000000
+      internalID: -5442878727259634857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ConceptButtonSadSprite_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f0e05f6cf3767f0800000000000000
+      internalID: -619456299992740082
       vertices: []
       indices: 
       edges: []
