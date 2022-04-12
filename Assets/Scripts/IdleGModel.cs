@@ -8,6 +8,7 @@ public class IdleGModel
     
     public int AutoClicksPerSecond;
     private IntObservable money;
+    private IntObservable moneyIncome;
     private IntObservable joyIncome;
     private IntObservable joyPriceUpgrade;
     private IntObservable sadIncome;
