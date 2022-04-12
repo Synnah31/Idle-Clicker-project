@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4178109418881896521}
   - component: {fileID: 4178109418881896520}
   m_Layer: 5
-  m_Name: UpgradeJoy
+  m_Name: BoutonUpgradeMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
