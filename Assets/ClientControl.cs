@@ -5,11 +5,11 @@ using UnityEngine;
 public class ClientControl : MonoBehaviour
 {
     [SerializeField] Transform[] waypoints;
-    [SerializeField] List<GameObject> Pathing1;
-    [SerializeField] List<GameObject> Pathing2;
-    [SerializeField] List<GameObject> Pathing3;
-    [SerializeField] List<GameObject> Pathing4;
-    [SerializeField] List<GameObject> Pathing5;
+    [SerializeField] List<GameObject> PathingJoy;
+    [SerializeField] List<GameObject> PathingSad;
+    [SerializeField] List<GameObject> PathingFear;
+    [SerializeField] List<GameObject> PathingAnger;
+    [SerializeField] List<GameObject> PathingDisgust;
     [SerializeField] float moveSpeed = 2f;
 
     int waypointIndex = 0;
