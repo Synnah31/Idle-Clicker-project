@@ -1,97 +1,121 @@
 fileFormatVersion: 2
-guid: 6efc5caa6ad3f274c8f424ec09be167a
+guid: 24e8b03c3959f5d45b4ef4eb126f92ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -255070394480417520
-    second: Joy1
+      213: 9042620503679911688
+    second: Joie1
   - first:
-      213: 6327698776650816724
-    second: Joy2
+      213: 155023548783934204
+    second: Joie2
   - first:
-      213: 358933735901841349
+      213: -6018827591697770908
+    second: SpriteSheetFinalEmo_2
+  - first:
+      213: -8007084853779357318
     second: Excitation1
   - first:
-      213: 6106907281461560217
+      213: -7125892611732818193
+    second: SpriteSheetFinalEmo_4
+  - first:
+      213: -3930841087124430787
     second: Excitation2
   - first:
-      213: -3944124814725835507
+      213: 968153737737639487
+    second: SpriteSheetFinalEmo_6
+  - first:
+      213: -89349710215090281
     second: Cruaute1
   - first:
-      213: 1456779437466993033
+      213: -6568377539333165179
     second: Cruaute2
   - first:
-      213: 3954900161219017808
+      213: -6803506306183430142
+    second: SpriteSheetFinalEmo_9
+  - first:
+      213: 5927076185475191248
     second: Degout1
   - first:
-      213: -1594021584437922784
+      213: -5052462404225657331
     second: Degout2
   - first:
-      213: 5339446359245129984
+      213: -5575505193618126770
     second: Folie1
   - first:
-      213: -2722033645831333011
+      213: 4041178483590564181
     second: Folie2
   - first:
-      213: -9184958761808554600
+      213: -8363027998525679969
     second: Folie3
   - first:
-      213: -5631599257383260397
+      213: -6698791381790088944
     second: Rage1
   - first:
-      213: -1776344342506147173
+      213: 8642111601279018379
     second: Rage2
   - first:
-      213: 785395737267042897
+      213: 936028792486363507
     second: Peur1
   - first:
-      213: -6627779008681419851
+      213: -5237152429523556342
     second: Peur2
   - first:
-      213: 8830816155245184904
+      213: -1641539471590091951
     second: Nostalgie1
   - first:
-      213: 4591855437526026419
+      213: -231972500347192593
     second: Nostalgie2
   - first:
-      213: 8896430962858749181
+      213: -3123838243235102462
     second: Nostalgie3
   - first:
-      213: 4215778914443950304
+      213: 1409532555982153975
     second: Tristesse1
   - first:
-      213: 1066267911974819731
+      213: -4924105785870794309
     second: Tristesse2
   - first:
-      213: 8619018009904392742
-    second: Terreur1
-  - first:
-      213: 790256048363001003
-    second: terreur2
-  - first:
-      213: 1956456391494185757
-    second: Desespoir1
-  - first:
-      213: 8848401552369474548
-    second: Desespoir2
-  - first:
-      213: -4334205479193377278
-    second: Desespoir3
-  - first:
-      213: 5679091782374903021
+      213: -581120215449980465
     second: Colere1
   - first:
-      213: -7304483039796070255
+      213: 428552210326140289
     second: Colere2
   - first:
-      213: 3677703649054644763
+      213: 7272206618773903798
+    second: SpriteSheetFinalEmo_31
+  - first:
+      213: 3523708988892889822
+    second: Terreur1
+  - first:
+      213: 812682104898719114
+    second: SpriteSheetFinalEmo_33
+  - first:
+      213: -1930697654055573944
+    second: SpriteSheetFinalEmo_34
+  - first:
+      213: 5413919260687240563
+    second: Terreur2
+  - first:
+      213: -5384882240265446237
+    second: SpriteSheetFinalEmo_36
+  - first:
+      213: 595206652127051600
+    second: Desespoir1
+  - first:
+      213: 2642479666583454005
+    second: Desespoir2
+  - first:
+      213: 3752685314187055846
+    second: Desespoir3
+  - first:
+      213: 2555495385182949366
+    second: Neutre
+  - first:
+      213: 8231169951480762105
     second: Devaster1
   - first:
-      213: -3782072191555197925
+      213: 5883922403467738165
     second: Devaster2
-  - first:
-      213: -4285522002973079396
-    second: Neutre1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -181,13 +205,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Joy1
+      name: Joie1
       rect:
         serializedVersion: 2
-        x: 9
-        y: 143
-        width: 26
-        height: 21
+        x: 7
+        y: 178
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015a640e3dec57cf0800000000000000
-      internalID: -255070394480417520
+      spriteID: 80741803077dd7d70800000000000000
+      internalID: 9042620503679911688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Joy2
+      name: Joie2
       rect:
         serializedVersion: 2
-        x: 38
-        y: 143
-        width: 26
-        height: 21
+        x: 36
+        y: 178
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dc12f3038080d750800000000000000
-      internalID: 6327698776650816724
+      spriteID: cfa3615a811c62200800000000000000
+      internalID: 155023548783934204
       vertices: []
       indices: 
       edges: []
@@ -226,30 +250,9 @@ TextureImporter:
       name: Excitation1
       rect:
         serializedVersion: 2
-        x: 85
-        y: 143
-        width: 37
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c74552c4503bf400800000000000000
-      internalID: 358933735901841349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Excitation2
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 143
-        width: 35
+        x: 75
+        y: 179
+        width: 38
         height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -258,8 +261,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99343c311d710c450800000000000000
-      internalID: 6106907281461560217
+      spriteID: a712214bfbe11e090800000000000000
+      internalID: -8007084853779357318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excitation2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 179
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3020759bd8d279c0800000000000000
+      internalID: -3930841087124430787
       vertices: []
       indices: 
       edges: []
@@ -268,113 +292,8 @@ TextureImporter:
       name: Cruaute1
       rect:
         serializedVersion: 2
-        x: 175
-        y: 141
-        width: 21
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d05967cb067a349c0800000000000000
-      internalID: -3944124814725835507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cruaute2
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 141
-        width: 31
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98140561e25873410800000000000000
-      internalID: 1456779437466993033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Degout1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 117
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05c389f1eb0a2e630800000000000000
-      internalID: 3954900161219017808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Degout2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 117
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 024b54f70d5e0e9e0800000000000000
-      internalID: -1594021584437922784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Folie1
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 119
-        width: 27
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0090f049c26891a40800000000000000
-      internalID: 5339446359245129984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Folie2
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 119
+        x: 197
+        y: 177
         width: 30
         height: 21
       alignment: 0
@@ -384,19 +303,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6bdf8132d4693ad0800000000000000
-      internalID: -2722033645831333011
+      spriteID: 79f68d579e092cef0800000000000000
+      internalID: -89349710215090281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Folie3
+      name: Cruaute2
       rect:
         serializedVersion: 2
-        x: 150
-        y: 119
-        width: 25
+        x: 236
+        y: 177
+        width: 30
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -405,8 +324,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8951acd8ba8788080800000000000000
-      internalID: -9184958761808554600
+      spriteID: 58f6461cd6f68d4a0800000000000000
+      internalID: -6568377539333165179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Degout1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 151
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d11def3364314250800000000000000
+      internalID: 5927076185475191248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Degout2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 151
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d061d13663c02e9b0800000000000000
+      internalID: -5052462404225657331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folie1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 147
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48cb031193df92b0800000000000000
+      internalID: -5575505193618126770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folie2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 146
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5590e547b66251830800000000000000
+      internalID: 4041178483590564181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Folie3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 147
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f961b35385e80fb80800000000000000
+      internalID: -8363027998525679969
       vertices: []
       indices: 
       edges: []
@@ -416,28 +440,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 212
-        y: 92
-        width: 25
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31f215a105a88d1b0800000000000000
-      internalID: -5631599257383260397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rage2
-      rect:
-        serializedVersion: 2
-        x: 245
-        y: 92
+        y: 129
         width: 27
         height: 35
       alignment: 0
@@ -447,8 +450,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9275226b382957e0800000000000000
-      internalID: -1776344342506147173
+      spriteID: 01124ffdabc1903a0800000000000000
+      internalID: -6698791381790088944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rage2
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 129
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85a487a6b2fee770800000000000000
+      internalID: 8642111601279018379
       vertices: []
       indices: 
       edges: []
@@ -458,7 +482,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 92
+        y: 124
         width: 21
         height: 21
       alignment: 0
@@ -468,8 +492,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a78e7034946ea00800000000000000
-      internalID: 785395737267042897
+      spriteID: 37100bb3a317dfc00800000000000000
+      internalID: 936028792486363507
       vertices: []
       indices: 
       edges: []
@@ -479,7 +503,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 35
-        y: 92
+        y: 124
         width: 21
         height: 21
       alignment: 0
@@ -489,8 +513,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bbd0c96b166504a0800000000000000
-      internalID: -6627779008681419851
+      spriteID: a08acabec95e157b0800000000000000
+      internalID: -5237152429523556342
       vertices: []
       indices: 
       edges: []
@@ -500,8 +524,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 85
-        y: 92
-        width: 34
+        y: 108
+        width: 36
         height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -510,8 +534,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8878b2a618c5d8a70800000000000000
-      internalID: 8830816155245184904
+      spriteID: 153171f3c841839e0800000000000000
+      internalID: -1641539471590091951
       vertices: []
       indices: 
       edges: []
@@ -521,7 +545,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 124
-        y: 92
+        y: 108
         width: 36
         height: 26
       alignment: 0
@@ -531,8 +555,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b84fa5113c89bf30800000000000000
-      internalID: 4591855437526026419
+      spriteID: fea752f6d3ed7ccf0800000000000000
+      internalID: -231972500347192593
       vertices: []
       indices: 
       edges: []
@@ -542,7 +566,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 92
+        y: 108
         width: 36
         height: 26
       alignment: 0
@@ -552,8 +576,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfc6bfd43d8767b70800000000000000
-      internalID: 8896430962858749181
+      spriteID: 20101382ba5e5a4d0800000000000000
+      internalID: -3123838243235102462
       vertices: []
       indices: 
       edges: []
@@ -563,7 +587,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 58
+        y: 85
         width: 24
         height: 31
       alignment: 0
@@ -573,8 +597,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e873072694718a30800000000000000
-      internalID: 4215778914443950304
+      spriteID: 7f82aa2446aaf8310800000000000000
+      internalID: 1409532555982153975
       vertices: []
       indices: 
       edges: []
@@ -584,7 +608,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 58
+        y: 85
         width: 24
         height: 31
       alignment: 0
@@ -594,113 +618,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39718a044052cce00800000000000000
-      internalID: 1066267911974819731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terreur1
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 58
-        width: 39
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62aab09e637ec9770800000000000000
-      internalID: 8619018009904392742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: terreur2
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 58
-        width: 42
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba4d74460bd87fa00800000000000000
-      internalID: 790256048363001003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desespoir1
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 58
-        width: 21
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d13bd89e8bab62b10800000000000000
-      internalID: 1956456391494185757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desespoir2
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 54
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fb5ffeb456dbca70800000000000000
-      internalID: 8848401552369474548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Desespoir3
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 53
-        width: 25
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 206802d841fc9d3c0800000000000000
-      internalID: -4334205479193377278
+      spriteID: bb1c9b470ef0aabb0800000000000000
+      internalID: -4924105785870794309
       vertices: []
       indices: 
       edges: []
@@ -710,7 +629,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 9
-        y: 31
+        y: 50
         width: 28
         height: 26
       alignment: 0
@@ -720,8 +639,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deccb4f03ef20de40800000000000000
-      internalID: 5679091782374903021
+      spriteID: fc13e423e327fe7f0800000000000000
+      internalID: -581120215449980465
       vertices: []
       indices: 
       edges: []
@@ -730,8 +649,8 @@ TextureImporter:
       name: Colere2
       rect:
         serializedVersion: 2
-        x: 42
-        y: 31
+        x: 45
+        y: 50
         width: 28
         height: 26
       alignment: 0
@@ -741,19 +660,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 198f619406341aa90800000000000000
-      internalID: -7304483039796070255
+      spriteID: 185b238f6f582f500800000000000000
+      internalID: 428552210326140289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Devaster1
+      name: Terreur1
       rect:
         serializedVersion: 2
-        x: 97
-        y: 31
-        width: 24
+        x: 86
+        y: 69
+        width: 42
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -762,17 +681,122 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1a5f07cbf3d90330800000000000000
-      internalID: 3677703649054644763
+      spriteID: ed2cfcee7aab6e030800000000000000
+      internalID: 3523708988892889822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Devaster2
+      name: Terreur2
       rect:
         serializedVersion: 2
-        x: 121
+        x: 134
+        y: 69
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d88e722ea122b40800000000000000
+      internalID: 5413919260687240563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desespoir1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 64
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f7bfbeb49924800800000000000000
+      internalID: 595206652127051600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desespoir2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 64
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53146ec9149fba420800000000000000
+      internalID: 2642479666583454005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desespoir3
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 64
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2d1f12967341430800000000000000
+      internalID: 3752685314187055846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neutre
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 17
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffcaf26381f67320800000000000000
+      internalID: 2555495385182949366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devaster1
+      rect:
+        serializedVersion: 2
+        x: 93
         y: 31
         width: 25
         height: 21
@@ -783,20 +807,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b14287b4161638bc0800000000000000
-      internalID: -3782072191555197925
+      spriteID: 9fe41e3d57dfa3270800000000000000
+      internalID: 8231169951480762105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Neutre1
+      name: Devaster2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 5
-        width: 22
-        height: 23
+        x: 126
+        y: 31
+        width: 25
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,8 +828,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c984ba7a174c684c0800000000000000
-      internalID: -4285522002973079396
+      spriteID: 53c38a86044e7a150800000000000000
+      internalID: 5883922403467738165
       vertices: []
       indices: 
       edges: []
