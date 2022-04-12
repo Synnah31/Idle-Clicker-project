@@ -1,40 +1,37 @@
 fileFormatVersion: 2
-guid: dd1b5236aae72984bbec68a3c9b76cbb
+guid: 8d7f6618cfb7c8c43879e8d557494bb4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5408371827326279076
-    second: joie 1
+      213: -2834122007493373263
+    second: 1
   - first:
-      213: 4772910051288036138
-    second: joie 2
+      213: -1392677924834206276
+    second: 2
   - first:
-      213: 3976081409016744656
-    second: "d\xE9gout 1"
+      213: -4856920375979401442
+    second: 3
   - first:
-      213: 8202915303590796623
-    second: "d\xE9gout 2"
+      213: 107273557598526429
+    second: 4
   - first:
-      213: -9100586817710038712
-    second: peur 1
+      213: -7279202746792943278
+    second: 5
   - first:
-      213: 1320616976498377012
-    second: peur 2
+      213: -4913532693894781029
+    second: 6
   - first:
-      213: -8753975898297123751
-    second: tristesse 1
+      213: -1855756957936706172
+    second: 8
   - first:
-      213: -8254212190474157189
-    second: tristesse 2
+      213: -1890313620571192698
+    second: 9
   - first:
-      213: -5243411207768346179
-    second: "col\xE8re 1"
+      213: -5018987258312426023
+    second: 10
   - first:
-      213: -854545913287363878
-    second: "col\xE8re 2"
-  - first:
-      213: 3618466879977043780
-    second: neutre
+      213: -6038004972092858098
+    second: 11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: joie 1
+      name: 1
       rect:
         serializedVersion: 2
-        x: 9
-        y: 143
-        width: 21
-        height: 23
+        x: 18
+        y: 198
+        width: 27
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ad530da5856e0b40800000000000000
-      internalID: 5408371827326279076
+      spriteID: 1b29d3dcc0d2ba8d0800000000000000
+      internalID: -2834122007493373263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: joie 2
+      name: 2
       rect:
         serializedVersion: 2
-        x: 38
-        y: 143
-        width: 26
-        height: 21
+        x: 82
+        y: 198
+        width: 27
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a233ae75768cc3240800000000000000
-      internalID: 4772910051288036138
+      spriteID: cbd9abb5ec63cace0800000000000000
+      internalID: -1392677924834206276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "d\xE9gout 1"
+      name: 3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 119
-        width: 21
-        height: 21
+        x: 143
+        y: 198
+        width: 33
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0da4a7ea9f0ed2730800000000000000
-      internalID: 3976081409016744656
+      spriteID: e1f146fa6a0c89cb0800000000000000
+      internalID: -4856920375979401442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "d\xE9gout 2"
+      name: 4
       rect:
         serializedVersion: 2
-        x: 34
-        y: 117
-        width: 21
-        height: 23
+        x: 8
+        y: 134
+        width: 44
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4d1529f10c96d170800000000000000
-      internalID: 8202915303590796623
+      spriteID: ddbd3767bbc1d7100800000000000000
+      internalID: 107273557598526429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: peur 1
+      name: 5
       rect:
         serializedVersion: 2
-        x: 10
-        y: 92
-        width: 21
-        height: 21
+        x: 66
+        y: 133
+        width: 62
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8416aca918834b180800000000000000
-      internalID: -9100586817710038712
+      spriteID: 251eb5d2ba31bfa90800000000000000
+      internalID: -7279202746792943278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: peur 2
+      name: 6
       rect:
         serializedVersion: 2
-        x: 35
-        y: 92
-        width: 21
-        height: 21
+        x: 128
+        y: 135
+        width: 64
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4314988a426c35210800000000000000
-      internalID: 1320616976498377012
+      spriteID: b9722244c00afcbb0800000000000000
+      internalID: -4913532693894781029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tristesse 1
+      name: 8
       rect:
         serializedVersion: 2
-        x: 10
-        y: 58
-        width: 24
-        height: 31
+        x: 0
+        y: 73
+        width: 63
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,20 +261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95c3ba11d41a38680800000000000000
-      internalID: -8753975898297123751
+      spriteID: 48d19b401e60f36e0800000000000000
+      internalID: -1855756957936706172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tristesse 2
+      name: 9
       rect:
         serializedVersion: 2
-        x: 37
-        y: 58
-        width: 24
-        height: 31
+        x: 68
+        y: 88
+        width: 60
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,20 +282,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73c616deb5237d80800000000000000
-      internalID: -8254212190474157189
+      spriteID: 68285c307c144c5e0800000000000000
+      internalID: -1890313620571192698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "col\xE8re 1"
+      name: 10
       rect:
         serializedVersion: 2
-        x: 9
-        y: 31
-        width: 28
-        height: 24
+        x: 132
+        y: 87
+        width: 57
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,20 +303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db17aad8949ab37b0800000000000000
-      internalID: -5243411207768346179
+      spriteID: 9dd73182ea9f85ab0800000000000000
+      internalID: -5018987258312426023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "col\xE8re 2"
+      name: 11
       rect:
         serializedVersion: 2
-        x: 43
-        y: 31
-        width: 26
-        height: 26
+        x: 4
+        y: 22
+        width: 59
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,29 +324,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad2be3af40b0424f0800000000000000
-      internalID: -854545913287363878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: neutre
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 5
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4473c84b470673230800000000000000
-      internalID: 3618466879977043780
+      spriteID: e01ec56f772b43ca0800000000000000
+      internalID: -6038004972092858098
       vertices: []
       indices: 
       edges: []
