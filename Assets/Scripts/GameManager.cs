@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         {
             TotalClicks += AutoClicksPerSecond * Time.deltaTime;
             ClicksTotalText.text = TotalClicks.ToString("0");
-
+           
         }
     }
 

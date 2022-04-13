@@ -8,6 +8,7 @@ public class IdleGModel
     
     public int AutoClicksPerSecond;
     private IntObservable money;
+    private IntObservable moneyIncome;          //Idle à créer
     private IntObservable joyIncome;
     private IntObservable joyPriceUpgrade;
     private IntObservable sadIncome;
@@ -16,8 +17,15 @@ public class IdleGModel
     private IntObservable fearPriceUpgrade;
     private IntObservable angerIncome;
     private IntObservable angerPriceUpgrade;
+    private IntObservable disgustIncome;          //A créer
+    private IntObservable disgustPriceUpgrade;    //A créer
 
-    private int joyUpgradeCounter;
+    public bool isSadMachineUp;
+    public bool isFearMachineUp;
+    public bool isAngerMachineUp;
+    public bool isDisgustMachineUp;               //A créer
+
+    //private int joyUpgradeCounter;
     public IntObservable GetMoney()
     {
         return money;
