@@ -4,37 +4,39 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
+    private IdleGModel _model;
     [SerializeField] private GameObject _waypointsJoy;
     [SerializeField] private GameObject _waypointsSad;
     [SerializeField] private GameObject _waypointsFear;
     [SerializeField] private GameObject _waypointsDisgust;
     [SerializeField] private GameObject _waypointsAnger;
 
-    public GameObject Client;
+    /*[SerializeField] public GameObject Client;*/
+    // Dans la fonction
     private float posRandX;
     private float posRandY;
     Vector2 posSpawn;
-    public float spawnRate = 2f;
-    private float nextSpawn = 0.0f;
+    /*public float spawnRate = 2f;
+    private float nextSpawn = 0.0f;*/
 
     // Start is called before the first frame update
     void Start()
     {
-        
+       /* _model.AddMoney(2);*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextSpawn)
+        /*if (Time.time > nextSpawn)
         {
-            nextSpawn = Time.time + spawnRate;
-            posRandX = Random.Range(-8, -6);             
+            nextSpawn = Time.time + spawnRate;*/
+            /*posRandX = Random.Range(-8, -6);             
             posRandY = Random.Range(0, 3);             
             posSpawn = new Vector2(posRandX, posRandY);
             GameObject client = Instantiate(Client, posSpawn, Quaternion.identity);
-            client.GetComponent<ClientControl>().Init(_waypointsJoy,_waypointsSad, _waypointsFear, _waypointsDisgust, _waypointsAnger);
+            client.GetComponent<ClientControl>().Init(_waypointsJoy,_waypointsSad, _waypointsFear, _waypointsDisgust, _waypointsAnger);*/
             
-        }
     }
 }
+

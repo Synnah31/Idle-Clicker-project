@@ -100,6 +100,7 @@ public class ClientControl : MonoBehaviour
     float WPradius = 1;                     // ?
     int randomList;
     bool stop;
+    [SerializeField] private Animator _animator;
 
     private void Move()
     {
@@ -107,8 +108,8 @@ public class ClientControl : MonoBehaviour
         {
 
             transform.position = Vector3.MoveTowards(transform.position,
-                                                        _waypointsList[randomList].transform.GetChild(currentWaypointsList).transform.position,
-                                                        moveSpeed * Time.deltaTime);
+                                                     _waypointsList[randomList].transform.GetChild(currentWaypointsList).transform.position,
+                                                     moveSpeed * Time.deltaTime);
             if (Vector3.Distance(_waypointsList[randomList].transform.GetChild(currentWaypointsList).transform.position,
                                 transform.position) < WPradius)
             {
@@ -141,6 +142,11 @@ public class ClientControl : MonoBehaviour
     private void Update()
     {
         Move();
+    }
+
+    internal void TransformToJoy()
+    {
+       _animator.SetBool("IsJoy", true);
     }
 }
 
