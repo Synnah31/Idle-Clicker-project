@@ -52,21 +52,21 @@ public class GameManager : MonoBehaviour
         _model.GetAngerPriceUpgrade().Subscribe(_angerUpgradePriceView);
         _buttonSpawn.onClick.AddListener(spawnEmotion);
         _joyMachineTrigger.Subscribe(OnTriggerEnterJoyMachine);
-       // _sadMachineTrigger.Subscribe(OnTriggerEnterSadMachine);
-        //_fearMachineTrigger.Subscribe(OnTriggerEnterFearMachine);
+        _sadMachineTrigger.Subscribe(OnTriggerEnterSadMachine);
+        _fearMachineTrigger.Subscribe(OnTriggerEnterFearMachine);
     }
 
-    private void OnTriggerEnterFearMachine()
+    private void OnTriggerEnterFearMachine(ClientControl clientControl)
     {
         Debug.Log("Une ame est rentrée dans la FearMachine");
-       // _animator.SetBool("IsFear", _isFear);
+        clientControl.TransformToFear();
         _model.AddMoney(400);
     }
 
-    private void OnTriggerEnterSadMachine()
+    private void OnTriggerEnterSadMachine(ClientControl clientControl)
     {
         Debug.Log("Une ame est rentrée dans la SadMachine");
-       // _animator.SetBool("IsSad", _isSad);
+        clientControl.TransformToSad();
         _model.AddMoney(100);
     }
 
