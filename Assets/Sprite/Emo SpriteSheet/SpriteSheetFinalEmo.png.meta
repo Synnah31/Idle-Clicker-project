@@ -10,7 +10,7 @@ TextureImporter:
     second: Joie2
   - first:
       213: -6018827591697770908
-    second: SpriteSheetFinalEmo_2
+    second: Neutre2
   - first:
       213: -8007084853779357318
     second: Excitation1
@@ -650,9 +650,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 45
-        y: 47
+        y: 50
         width: 28
-        height: 29
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -776,9 +776,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 17
-        width: 22
-        height: 23
+        y: 18
+        width: 21
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -830,6 +830,27 @@ TextureImporter:
       bones: []
       spriteID: 53c38a86044e7a150800000000000000
       internalID: 5883922403467738165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neutre2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466d888c134d87ca0800000000000000
+      internalID: -6018827591697770908
       vertices: []
       indices: 
       edges: []
