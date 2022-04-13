@@ -16,13 +16,13 @@ TextureImporter:
     second: Excitation1
   - first:
       213: -7125892611732818193
-    second: SpriteSheetFinalEmo_4
+    second: Joie3
   - first:
       213: -3930841087124430787
     second: Excitation2
   - first:
       213: 968153737737639487
-    second: SpriteSheetFinalEmo_6
+    second: Degout3
   - first:
       213: -89349710215090281
     second: Cruaute1
@@ -31,7 +31,7 @@ TextureImporter:
     second: Cruaute2
   - first:
       213: -6803506306183430142
-    second: SpriteSheetFinalEmo_9
+    second: Degout4
   - first:
       213: 5927076185475191248
     second: Degout1
@@ -116,6 +116,9 @@ TextureImporter:
   - first:
       213: 5883922403467738165
     second: Devaster2
+  - first:
+      213: -5875690623654990575
+    second: Cruaute3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -377,9 +380,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 84
-        y: 147
+        y: 146
         width: 30
-        height: 21
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,7 +401,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 121
-        y: 146
+        y: 147
         width: 30
         height: 21
       alignment: 0
@@ -418,10 +421,10 @@ TextureImporter:
       name: Folie3
       rect:
         serializedVersion: 2
-        x: 161
-        y: 147
-        width: 30
-        height: 21
+        x: 160
+        y: 146
+        width: 31
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -839,9 +842,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 11
-        y: 12
+        y: 10
         width: 21
-        height: 28
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,6 +854,90 @@ TextureImporter:
       bones: []
       spriteID: 466d888c134d87ca0800000000000000
       internalID: -6018827591697770908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Joie3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 178
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6b51a9c6ebb1d90800000000000000
+      internalID: -7125892611732818193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Degout3
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 151
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3691d9e1b29f6d00800000000000000
+      internalID: 968153737737639487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Degout4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 151
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2008ec0af071591a0800000000000000
+      internalID: -6803506306183430142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cruaute3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 177
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d63fe228a557ea0800000000000000
+      internalID: -5875690623654990575
       vertices: []
       indices: 
       edges: []
