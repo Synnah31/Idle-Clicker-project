@@ -223,7 +223,7 @@ TextureImporter:
         x: 326
         y: 540
         width: 115
-        height: 82
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,12 +259,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soleil1V1
+      name: soleilV1_1
       rect:
         serializedVersion: 2
         x: 7
         y: 395
-        width: 115
+        width: 120
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -280,12 +280,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soleil2V1
+      name: soleilV1_2
       rect:
         serializedVersion: 2
         x: 167
         y: 395
-        width: 115
+        width: 120
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -301,7 +301,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soleil3V1
+      name: soleilV1_3
       rect:
         serializedVersion: 2
         x: 327
@@ -322,7 +322,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soleil1V2
+      name: soleilV2_1
       rect:
         serializedVersion: 2
         x: 7
@@ -343,13 +343,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soleil2V2
+      name: soleilV2_2
       rect:
         serializedVersion: 2
         x: 167
         y: 262
-        width: 116
-        height: 93
+        width: 118
+        height: 94
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,7 +370,7 @@ TextureImporter:
         x: 7
         y: 138
         width: 115
-        height: 86
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,7 +391,7 @@ TextureImporter:
         x: 173
         y: 144
         width: 115
-        height: 80
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
