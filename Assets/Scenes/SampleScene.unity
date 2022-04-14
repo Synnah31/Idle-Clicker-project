@@ -4713,6 +4713,7 @@ MonoBehaviour:
   _fearMachineTrigger: {fileID: 1208496682}
   _disgustMachineTrigger: {fileID: 594209421}
   _angerMachineTrigger: {fileID: 1168522017}
+  _sadMachineView: {fileID: 0}
   AutoClicksPerSecond: 0
   MinimumClicksToUnlockUpgrade: 0
 --- !u!4 &1602410560
@@ -6151,6 +6152,22 @@ PrefabInstance:
     - target: {fileID: 6784154997603291776, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_Name
       value: MachineJoy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589548632899205452, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
+      propertyPath: m_Size.x
+      value: 2.8095238
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589548632899205452, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
+      propertyPath: m_Size.y
+      value: 2.2142856
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589548632899205452, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8945614616159186397, guid: 84cfa2541c04b5e4c88d59ca9b4c8f1a, type: 3}
+    - target: {fileID: 8589548632899205452, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8842915134724985057, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_RootOrder
