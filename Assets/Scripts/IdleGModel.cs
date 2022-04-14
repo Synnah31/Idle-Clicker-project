@@ -18,9 +18,11 @@ public class IdleGModel
     private IntObservable angerIncome;
     private IntObservable angerPriceUpgrade;
     private IntObservable disgustIncome;          
-    private IntObservable disgustPriceUpgrade;    
+    private IntObservable disgustPriceUpgrade;
+    private IntObservable idleSpawnUpgrade;
 
     public BoolObservable isSadMachineUnlock;
+    public BoolObservable isIdleSpawnerUnlock;
     public bool isFearMachineUp;
     public bool isAngerMachineUp;
     public bool isDisgustMachineUp;               
@@ -40,6 +42,37 @@ public class IdleGModel
     public IntObservable GetJoyPriceUpgrade()
     {
         return joyPriceUpgrade;
+    }
+
+    internal BoolObservable GetIsIdleSpawnerUnlock()
+    {
+        return isIdleSpawnerUnlock;
+    }
+
+    internal IntObservable GetIdleSpawnUpgrade()
+    {
+        return idleSpawnUpgrade;
+    }
+
+    internal IntObservable GetJoyIncome()           
+    {
+        return joyIncome;
+    }
+    internal IntObservable GetSadIncome()           
+    {
+        return sadIncome;
+    }
+    internal IntObservable GetFearIncome()           
+    {
+        return fearIncome;
+    }
+    internal IntObservable GetDisgustIncome()           
+    {
+        return disgustIncome;
+    }
+    internal IntObservable GetAngerIncome()           
+    {
+        return angerIncome;
     }
     public IntObservable GetSadPriceUpgrade()
     {
@@ -74,6 +107,7 @@ public class IdleGModel
         disgustPriceUpgrade = new IntObservable(100000);
         angerIncome = new IntObservable(3500);
         angerPriceUpgrade = new IntObservable(500000);
+        idleSpawnUpgrade = new IntObservable(10000);
         isSadMachineUnlock = new BoolObservable(false);
     }
 
@@ -84,18 +118,21 @@ public class IdleGModel
     internal void IncrementJoy()
     {
         Debug.Log(joyIncome.GetValue());
-        joyIncome.Add((int)(joyIncome.GetValue() * 0.05));
+        AddMoney(-joyPriceUpgrade.GetValue());
+        joyIncome.Add((int)(joyIncome.GetValue() * 0.1));
         joyPriceUpgrade.Add((int)(joyPriceUpgrade.GetValue() * 0.2f));
     }
 
     internal void IncrementSad()
     {
+        AddMoney(-sadPriceUpgrade.GetValue());
         sadIncome.Add((int)(sadIncome.GetValue() * 0.1));
         sadPriceUpgrade.Add((int)(sadPriceUpgrade.GetValue() * 0.2f));
     }
 
     internal void IncrementFear()
     {
+        AddMoney(-fearPriceUpgrade.GetValue());
         fearIncome.Add((int)(fearIncome.GetValue() * 0.5));
         fearPriceUpgrade.Add((int)(fearPriceUpgrade.GetValue() * 0.2f));
     }
@@ -103,12 +140,14 @@ public class IdleGModel
     internal void IncrementDisgust()
     {
         Debug.Log(disgustIncome.GetValue());
+        AddMoney(-disgustPriceUpgrade.GetValue());
         disgustIncome.Add((int)(disgustIncome.GetValue() * 0.75));
         disgustPriceUpgrade.Add((int)(disgustPriceUpgrade.GetValue() * 0.2f));
     }
 
     internal void IncrementAnger()
     {
+        AddMoney(-angerPriceUpgrade.GetValue());
         angerIncome.Add((int)(angerIncome.GetValue() * 0.75));
         angerPriceUpgrade.Add((int)(angerPriceUpgrade.GetValue() * 0.2f));
     }

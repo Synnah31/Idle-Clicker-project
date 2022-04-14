@@ -1731,6 +1731,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8004315dfac2240b3a1cb4f01da7c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &655605939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4178109418881896520, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+  m_PrefabInstance: {fileID: 1660010565}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &658926884 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4178109419119915491, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
@@ -2225,7 +2236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000015259, y: -50}
+  m_AnchoredPosition: {x: 0.000015259, y: -44}
   m_SizeDelta: {x: 235.05, y: 115.2259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793494147
@@ -4332,7 +4343,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7248599720ed53048bb27e4a51af719f, type: 3}
     m_FontSize: 33
-    m_FontStyle: 2
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 50
@@ -4342,7 +4353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 755433
+  m_Text: 0
 --- !u!222 &1465541851
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4708,11 +4719,13 @@ MonoBehaviour:
   _waypointsAnger: {fileID: 1404834162}
   _client: {fileID: 1493382730890437563, guid: b2fcb7697401fb84ebb39886788a0d4c, type: 3}
   _buttonSpawn: {fileID: 489188136}
+  _IdleEmotionSpawn: {fileID: 655605939}
   _joyMachineTrigger: {fileID: 539726333}
   _sadMachineTrigger: {fileID: 340715512}
   _fearMachineTrigger: {fileID: 1208496682}
   _disgustMachineTrigger: {fileID: 594209421}
   _angerMachineTrigger: {fileID: 1168522017}
+  _spawn: {fileID: 1965626664}
   AutoClicksPerSecond: 0
   MinimumClicksToUnlockUpgrade: 0
 --- !u!4 &1602410560
@@ -4987,6 +5000,10 @@ PrefabInstance:
     - target: {fileID: 6784154997603291776, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_Name
       value: MachineSad
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784154997603291776, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8589548632899205452, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_Sprite
@@ -5772,6 +5789,9 @@ MonoBehaviour:
   _waypointsFear: {fileID: 2102421586}
   _waypointsDisgust: {fileID: 684044635}
   _waypointsAnger: {fileID: 1404834162}
+  Client: {fileID: 1493382730890437563, guid: b2fcb7697401fb84ebb39886788a0d4c, type: 3}
+  spawnDeltaTime: 2
+  nextSpawn: 0
 --- !u!4 &1965626665
 Transform:
   m_ObjectHideFlags: 0

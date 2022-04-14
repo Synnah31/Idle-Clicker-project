@@ -26,14 +26,19 @@ public class GameManager : MonoBehaviour
     //Clicker Button
     [SerializeField] Button _buttonSpawn;
 
+    [SerializeField] private Button _IdleEmotionSpawn;
+
     //Machines Trigger
     [SerializeField] private MachineTrigger _joyMachineTrigger;
     [SerializeField] private MachineTrigger _sadMachineTrigger;
     [SerializeField] private MachineTrigger _fearMachineTrigger;
     [SerializeField] private MachineTrigger _disgustMachineTrigger;
     [SerializeField] private MachineTrigger _angerMachineTrigger;
-    [SerializeField] private MachineView _sadMachineView;
 
+    [SerializeField] private Spawn _spawn;
+    //[SerializeField] private MachineView _sadMachineView;
+
+ 
     //Bool Machine Unlock              Rajouter dans le sprite sheet les sprite MachineBlack (lock) avec ces bool en false
     bool isSadMachineUp = false;
     bool isFearMachineUp = false;
@@ -73,42 +78,54 @@ public class GameManager : MonoBehaviour
         _fearMachineTrigger.Subscribe(OnTriggerEnterFearMachine);
         _disgustMachineTrigger.Subscribe(OnTriggerEnterDisgustMachine);       
         _angerMachineTrigger.Subscribe(OnTriggerEnterAngerMachine); 
-        _model.GetSadUnlock().Subscribe(_sadMachineView);
+        _IdleEmotionSpawn.onClick.AddListener(IdleSpawn);
+        //_model.GetSadUnlock().Subscribe(_sadMachineView);
+        
+    }
+
+    private void IdleSpawn()
+    {
+        if (_model.GetMoney().GetValue() >= _model.GetIdleSpawnUpgrade().GetValue())
+        {
+            _model.GetIsIdleSpawnerUnlock().SetValue(true);
+            _model.AddMoney(-_model.GetIdleSpawnUpgrade().GetValue());
+        }
     }
 
     private void OnTriggerEnterAngerMachine(ClientControl clientControl)
     {
         Debug.Log("Une ame est rentrée dans la AngerMachine");
         clientControl.TransformToAnger();
-        _model.AddMoney(400);
+        _model.AddMoney(_model.GetAngerIncome().GetValue());
     }
 
     private void OnTriggerEnterDisgustMachine(ClientControl clientControl)
     {
         Debug.Log("Une ame est rentrée dans la DisgustMachine");
         clientControl.TransformToDisgust();
-        _model.AddMoney(400);
+        _model.AddMoney(_model.GetDisgustIncome().GetValue());
     }
 
     private void OnTriggerEnterFearMachine(ClientControl clientControl)
     {
         Debug.Log("Une ame est rentrée dans la FearMachine");
         clientControl.TransformToFear();
-        _model.AddMoney(400);
+        _model.AddMoney(_model.GetFearIncome().GetValue());
     }
 
     private void OnTriggerEnterSadMachine(ClientControl clientControl)
     {
         Debug.Log("Une ame est rentrée dans la SadMachine");
         clientControl.TransformToSad();
-        _model.AddMoney(100);
+        _model.AddMoney(_model.GetSadIncome().GetValue());
     }
 
     private void OnTriggerEnterJoyMachine(ClientControl clientControl)
     {
         Debug.Log("Une ame est rentrée dans la JoyMachine");
         clientControl.TransformToJoy();
-        _model.AddMoney(10);
+       
+        _model.AddMoney(_model.GetJoyIncome().GetValue());
 
     }
 
@@ -147,19 +164,22 @@ public class GameManager : MonoBehaviour
     }
     public void OnClickUpgradeJoy()
     {
+       
+        
         if (_model.GetMoney().GetValue() >= _model.GetJoyPriceUpgrade().GetValue())
         {
-            _model.AddMoney(-_model.GetJoyPriceUpgrade().GetValue());
+            //_model.AddMoney(-_model.GetJoyPriceUpgrade().GetValue());
             _model.IncrementJoy();
+            
         }
 
     }
     public void OnClickUpgradeSad()
     {
-        _model.GetSadUnlock().SetValue(true);
+        
         if (_model.GetMoney().GetValue() >= _model.GetSadPriceUpgrade().GetValue())
         {
-            _model.AddMoney(-_model.GetSadPriceUpgrade().GetValue());
+            //_model.GetSadUnlock().SetValue(true);                                   //ATTENTION BIEN PLACÉ?
             _model.IncrementSad();
         }
     }
@@ -167,7 +187,6 @@ public class GameManager : MonoBehaviour
     {
         if (_model.GetMoney().GetValue() >= _model.GetFearPriceUpgrade().GetValue())
         {
-            _model.AddMoney(-_model.GetFearPriceUpgrade().GetValue());
             _model.IncrementFear();
         }
     }
@@ -175,7 +194,6 @@ public class GameManager : MonoBehaviour
     {
         if (_model.GetMoney().GetValue() >= _model.GetDisgustPriceUpgrade().GetValue())
         {
-            _model.AddMoney(-_model.GetDisgustPriceUpgrade().GetValue());
             _model.IncrementDisgust();
         }
     }
@@ -183,7 +201,6 @@ public class GameManager : MonoBehaviour
     {
         if (_model.GetMoney().GetValue() >= _model.GetAngerPriceUpgrade().GetValue())
         {
-            _model.AddMoney(-_model.GetAngerPriceUpgrade().GetValue());
             _model.IncrementAnger();
         }
     }
