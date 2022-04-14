@@ -32,8 +32,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private MachineTrigger _fearMachineTrigger;
     [SerializeField] private MachineTrigger _disgustMachineTrigger;
     [SerializeField] private MachineTrigger _angerMachineTrigger;
+    [SerializeField] private MachineView _sadMachineView;
 
-    //Bool Machine Unlock
+    //Bool Machine Unlock              Rajouter dans le sprite sheet les sprite MachineBlack (lock) avec ces bool en false
     bool isSadMachineUp = false;
     bool isFearMachineUp = false;
     bool isDisgustMachineUp = false;
@@ -71,7 +72,8 @@ public class GameManager : MonoBehaviour
         _sadMachineTrigger.Subscribe(OnTriggerEnterSadMachine);
         _fearMachineTrigger.Subscribe(OnTriggerEnterFearMachine);
         _disgustMachineTrigger.Subscribe(OnTriggerEnterDisgustMachine);       
-        _angerMachineTrigger.Subscribe(OnTriggerEnterAngerMachine);       
+        _angerMachineTrigger.Subscribe(OnTriggerEnterAngerMachine); 
+        _model.GetSadUnlock().Subscribe(_sadMachineView);
     }
 
     private void OnTriggerEnterAngerMachine(ClientControl clientControl)
@@ -121,6 +123,10 @@ public class GameManager : MonoBehaviour
         posRandY = Random.Range(-1, -3);
         posSpawn = new Vector2(posRandX, posRandY);
         GameObject client = Instantiate(_client, posSpawn, Quaternion.identity);
+        /*bool isSadMachineUp = false;
+        bool isFearMachineUp = false;
+        bool isDisgustMachineUp = false;
+        bool isAngerMachineUp = false;*/
         client.GetComponent<ClientControl>().Init(_waypointsJoy, _waypointsSad, _waypointsFear, _waypointsDisgust, _waypointsAnger);
     }
 
@@ -150,6 +156,7 @@ public class GameManager : MonoBehaviour
     }
     public void OnClickUpgradeSad()
     {
+        _model.GetSadUnlock().SetValue(true);
         if (_model.GetMoney().GetValue() >= _model.GetSadPriceUpgrade().GetValue())
         {
             _model.AddMoney(-_model.GetSadPriceUpgrade().GetValue());

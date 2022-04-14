@@ -20,7 +20,7 @@ public class IdleGModel
     private IntObservable disgustIncome;          
     private IntObservable disgustPriceUpgrade;    
 
-    public bool isSadMachineUp;
+    public BoolObservable isSadMachineUnlock;
     public bool isFearMachineUp;
     public bool isAngerMachineUp;
     public bool isDisgustMachineUp;               
@@ -57,7 +57,10 @@ public class IdleGModel
     {
         return angerPriceUpgrade;
     }
-
+    public BoolObservable GetSadUnlock()
+    {
+        return isSadMachineUnlock;
+    }
     public IdleGModel()
     {
         money = new IntObservable(0);
@@ -71,8 +74,13 @@ public class IdleGModel
         disgustPriceUpgrade = new IntObservable(100000);
         angerIncome = new IntObservable(3500);
         angerPriceUpgrade = new IntObservable(500000);
+        isSadMachineUnlock = new BoolObservable(false);
     }
 
+    public void UnlockSadMachine()
+    {
+        isSadMachineUnlock.SetValue(true);
+    }
     internal void IncrementJoy()
     {
         Debug.Log(joyIncome.GetValue());
