@@ -58,8 +58,8 @@ public class GameManager : MonoBehaviour
         _joyMachineTrigger.Subscribe(OnTriggerEnterJoyMachine);
         _sadMachineTrigger.Subscribe(OnTriggerEnterSadMachine);
         _fearMachineTrigger.Subscribe(OnTriggerEnterFearMachine);
-        _disgustMachineTrigger.Subscribe(OnTriggerEnterDisgustMachine);       //sfdx
-        _angerMachineTrigger.Subscribe(OnTriggerEnterAngerMachine);       //sdffd
+        _disgustMachineTrigger.Subscribe(OnTriggerEnterDisgustMachine);       
+        _angerMachineTrigger.Subscribe(OnTriggerEnterAngerMachine);       
     }
 
     private void OnTriggerEnterAngerMachine(ClientControl clientControl)
