@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] IntView _joyUpgradePriceView;
     [SerializeField] IntView _sadUpgradePriceView;
     [SerializeField] IntView _fearUpgradePriceView;
+    [SerializeField] IntView _disgustUpgradePriceView;
     [SerializeField] IntView _angerUpgradePriceView;
 
     [SerializeField] private GameObject _waypointsJoy;
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private MachineTrigger _joyMachineTrigger;
     [SerializeField] private MachineTrigger _sadMachineTrigger;
     [SerializeField] private MachineTrigger _fearMachineTrigger;
+    [SerializeField] private MachineTrigger _disgustMachineTrigger;
+    [SerializeField] private MachineTrigger _angerMachineTrigger;
     private bool _isJoy = false;
     private bool _isSad = false;
     private bool _isFear = false;
@@ -49,11 +52,28 @@ public class GameManager : MonoBehaviour
         _model.GetJoyPriceUpgrade().Subscribe(_joyUpgradePriceView);
         _model.GetSadPriceUpgrade().Subscribe(_sadUpgradePriceView);
         _model.GetFearPriceUpgrade().Subscribe(_fearUpgradePriceView);
+        _model.GetAngerPriceUpgrade().Subscribe(_disgustUpgradePriceView);
         _model.GetAngerPriceUpgrade().Subscribe(_angerUpgradePriceView);
         _buttonSpawn.onClick.AddListener(spawnEmotion);
         _joyMachineTrigger.Subscribe(OnTriggerEnterJoyMachine);
         _sadMachineTrigger.Subscribe(OnTriggerEnterSadMachine);
         _fearMachineTrigger.Subscribe(OnTriggerEnterFearMachine);
+        _disgustMachineTrigger.Subscribe(OnTriggerEnterDisgustMachine);       //sfdx
+        _angerMachineTrigger.Subscribe(OnTriggerEnterAngerMachine);       //sdffd
+    }
+
+    private void OnTriggerEnterAngerMachine(ClientControl clientControl)
+    {
+        Debug.Log("Une ame est rentrée dans la AngerMachine");
+        clientControl.TransformToAnger();
+        _model.AddMoney(400);
+    }
+
+    private void OnTriggerEnterDisgustMachine(ClientControl clientControl)
+    {
+        Debug.Log("Une ame est rentrée dans la DisgustMachine");
+        clientControl.TransformToDisgust();
+        _model.AddMoney(400);
     }
 
     private void OnTriggerEnterFearMachine(ClientControl clientControl)
@@ -85,8 +105,8 @@ public class GameManager : MonoBehaviour
         Vector2 posSpawn;
 
         _model.AddMoney(2);
-        posRandX = Random.Range(-8, -6);
-        posRandY = Random.Range(0, 3);
+        posRandX = Random.Range(-8, -7);
+        posRandY = Random.Range(-1, -3);
         posSpawn = new Vector2(posRandX, posRandY);
         GameObject client = Instantiate(_client, posSpawn, Quaternion.identity);
         client.GetComponent<ClientControl>().Init(_waypointsJoy, _waypointsSad, _waypointsFear, _waypointsDisgust, _waypointsAnger);
@@ -123,6 +143,10 @@ public class GameManager : MonoBehaviour
     public void OnClickUpgradeFear()
     {
         _model.IncrementFear();
+    }
+    public void OnClickUpgradeDisgust()
+    {
+        _model.IncrementDisgust();
     }
     public void OnClickUpgradeAnger()
     {

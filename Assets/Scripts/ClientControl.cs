@@ -158,5 +158,14 @@ public class ClientControl : MonoBehaviour
     {
         _animator.SetBool("IsFear", true);
     }
+
+    internal void TransformToDisgust()
+    {
+        _animator.SetBool("IsDisgust", true);
+    }
+    internal void TransformToAnger()
+    {
+        _animator.SetBool("IsAngry", true);
+    }
 }
 

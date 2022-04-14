@@ -17,13 +17,13 @@ public class IdleGModel
     private IntObservable fearPriceUpgrade;
     private IntObservable angerIncome;
     private IntObservable angerPriceUpgrade;
-    private IntObservable disgustIncome;          //A créer
-    private IntObservable disgustPriceUpgrade;    //A créer
+    private IntObservable disgustIncome;          
+    private IntObservable disgustPriceUpgrade;    
 
     public bool isSadMachineUp;
     public bool isFearMachineUp;
     public bool isAngerMachineUp;
-    public bool isDisgustMachineUp;               //A créer
+    public bool isDisgustMachineUp;               
 
     //private int joyUpgradeCounter;
     public IntObservable GetMoney()
@@ -49,7 +49,11 @@ public class IdleGModel
     {
         return fearPriceUpgrade;
     }
-    public IntObservable GetAngerPriceUpgrade()
+    public IntObservable GetDisgustPriceUpgrade()
+    {
+        return disgustPriceUpgrade;
+    }
+        public IntObservable GetAngerPriceUpgrade()
     {
         return angerPriceUpgrade;
     }
@@ -63,12 +67,15 @@ public class IdleGModel
         sadPriceUpgrade = new IntObservable(1500);
         fearIncome = new IntObservable(400);
         fearPriceUpgrade = new IntObservable(20000);
-        angerIncome = new IntObservable(1000);
-        angerPriceUpgrade = new IntObservable(100000);
+        disgustIncome = new IntObservable(1000);
+        disgustPriceUpgrade = new IntObservable(100000);
+        angerIncome = new IntObservable(3500);
+        angerPriceUpgrade = new IntObservable(500000);
     }
 
     internal void IncrementJoy()
     {
+        Debug.Log(joyIncome.GetValue());
         joyIncome.Add((int)(joyIncome.GetValue() * 0.05));
         joyPriceUpgrade.Add((int)(joyPriceUpgrade.GetValue() * 0.2f));
     }
@@ -83,6 +90,13 @@ public class IdleGModel
     {
         fearIncome.Add((int)(fearIncome.GetValue() * 0.5));
         fearPriceUpgrade.Add((int)(fearPriceUpgrade.GetValue() * 0.2f));
+    }
+
+    internal void IncrementDisgust()
+    {
+        Debug.Log(disgustIncome.GetValue());
+        disgustIncome.Add((int)(disgustIncome.GetValue() * 0.75));
+        disgustPriceUpgrade.Add((int)(disgustPriceUpgrade.GetValue() * 0.2f));
     }
 
     internal void IncrementAnger()
