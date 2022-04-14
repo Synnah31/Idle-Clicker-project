@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continuer
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
+  m_sharedMaterial: {fileID: 4452878113263968411, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1683,6 +1683,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: set_logWarnings
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &516118391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1863,8 +1875,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quitter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
+  m_sharedMaterial: {fileID: 4452878113263968411, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1993,6 +2005,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Machine de Col\xE8re"
       objectReference: {fileID: 0}
+    - target: {fileID: 3022111178670272227, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 700fd270526666c4190163fcf24bd5c0, type: 3}
     - target: {fileID: 4026841860899899843, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_Name
       value: AngerButtonText
@@ -3210,8 +3226,8 @@ MonoBehaviour:
 
     Upgrade'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
+  m_sharedMaterial: {fileID: 4452878113263968411, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3460,6 +3476,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: Machine Triste
       objectReference: {fileID: 0}
+    - target: {fileID: 3022111178670272227, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 700fd270526666c4190163fcf24bd5c0, type: 3}
     - target: {fileID: 4026841860899899843, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_Name
       value: SadButtonText
@@ -3704,6 +3724,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Machine d\xE9go\xFBtante"
       objectReference: {fileID: 0}
+    - target: {fileID: 3022111178670272227, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 700fd270526666c4190163fcf24bd5c0, type: 3}
     - target: {fileID: 4026841860899899843, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_Name
       value: DisgustButtonText
@@ -4716,6 +4740,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: Machine terrifiante
       objectReference: {fileID: 0}
+    - target: {fileID: 3022111178670272227, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 700fd270526666c4190163fcf24bd5c0, type: 3}
     - target: {fileID: 4026841860899899843, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_Name
       value: FearButtonText
@@ -5413,6 +5441,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: Upgrade Billboard
       objectReference: {fileID: 0}
+    - target: {fileID: 3022111178670272227, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 700fd270526666c4190163fcf24bd5c0, type: 3}
     - target: {fileID: 4178109418881896520, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_Transition
       value: 2
@@ -5528,6 +5560,14 @@ PrefabInstance:
     - target: {fileID: 4178109419119915500, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_Text
       value: 10 000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085723802510771291, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -42.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085723802510771291, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.084
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
@@ -5907,7 +5947,7 @@ PrefabInstance:
     - target: {fileID: 3022111178670272227, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 12800000, guid: 700fd270526666c4190163fcf24bd5c0, type: 3}
     - target: {fileID: 3022111178670272227, guid: 0b985bcf635bcb2499e1dd134697cd1c, type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 150
@@ -6586,8 +6626,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pause
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
+  m_sharedMaterial: {fileID: 4452878113263968411, guid: df866be88fe048d43b9a58c5b28d5968, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
