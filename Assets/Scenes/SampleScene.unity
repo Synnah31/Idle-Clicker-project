@@ -4826,18 +4826,22 @@ PrefabInstance:
     - target: {fileID: 8589548632899205452, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 74df9be2fe0c7454a920e8ee11dea743, type: 3}
+      objectReference: {fileID: 5950877812388652817, guid: a56ea61c359ea47449b834da278c43fc, type: 3}
+    - target: {fileID: 8589548632899205452, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8842915134724985057, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8842915134724985057, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.12
+      value: 2.127
       objectReference: {fileID: 0}
     - target: {fileID: 8842915134724985057, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0.291
       objectReference: {fileID: 0}
     - target: {fileID: 8842915134724985057, guid: 9dd1ca40b43958046878f3d92b343af3, type: 3}
       propertyPath: m_LocalPosition.z
