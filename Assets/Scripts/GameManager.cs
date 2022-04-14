@@ -6,28 +6,40 @@ public class GameManager : MonoBehaviour
     public Text ClicksTotalText;
     private IdleGModel _model;
     [SerializeField] IntView _moneyView;
+
+    //Prix Upgrade Machine
     [SerializeField] IntView _joyUpgradePriceView;
     [SerializeField] IntView _sadUpgradePriceView;
     [SerializeField] IntView _fearUpgradePriceView;
     [SerializeField] IntView _disgustUpgradePriceView;
     [SerializeField] IntView _angerUpgradePriceView;
 
+    //Waypoints
     [SerializeField] private GameObject _waypointsJoy;
     [SerializeField] private GameObject _waypointsSad;
     [SerializeField] private GameObject _waypointsFear;
     [SerializeField] private GameObject _waypointsDisgust;
     [SerializeField] private GameObject _waypointsAnger;
+
     [SerializeField] private GameObject _client;
+
+    //Clicker Button
     [SerializeField] Button _buttonSpawn;
 
+    //Machines Trigger
     [SerializeField] private MachineTrigger _joyMachineTrigger;
     [SerializeField] private MachineTrigger _sadMachineTrigger;
     [SerializeField] private MachineTrigger _fearMachineTrigger;
     [SerializeField] private MachineTrigger _disgustMachineTrigger;
     [SerializeField] private MachineTrigger _angerMachineTrigger;
-    private bool _isJoy = false;
-    private bool _isSad = false;
-    private bool _isFear = false;
+
+    //Bool Machine Unlock
+    bool isSadMachineUp = false;
+    bool isFearMachineUp = false;
+    bool isDisgustMachineUp = false;
+    bool isAngerMachineUp = false;
+    
+
 
     float TotalClicks;
     bool HasUpgrade = false;
@@ -138,18 +150,34 @@ public class GameManager : MonoBehaviour
     }
     public void OnClickUpgradeSad()
     {
-        _model.IncrementSad();
+        if (_model.GetMoney().GetValue() >= _model.GetSadPriceUpgrade().GetValue())
+        {
+            _model.AddMoney(-_model.GetSadPriceUpgrade().GetValue());
+            _model.IncrementSad();
+        }
     }
     public void OnClickUpgradeFear()
     {
-        _model.IncrementFear();
+        if (_model.GetMoney().GetValue() >= _model.GetFearPriceUpgrade().GetValue())
+        {
+            _model.AddMoney(-_model.GetFearPriceUpgrade().GetValue());
+            _model.IncrementFear();
+        }
     }
     public void OnClickUpgradeDisgust()
     {
-        _model.IncrementDisgust();
+        if (_model.GetMoney().GetValue() >= _model.GetDisgustPriceUpgrade().GetValue())
+        {
+            _model.AddMoney(-_model.GetDisgustPriceUpgrade().GetValue());
+            _model.IncrementDisgust();
+        }
     }
     public void OnClickUpgradeAnger()
     {
-        _model.IncrementAnger();
+        if (_model.GetMoney().GetValue() >= _model.GetAngerPriceUpgrade().GetValue())
+        {
+            _model.AddMoney(-_model.GetAngerPriceUpgrade().GetValue());
+            _model.IncrementAnger();
+        }
     }
 }

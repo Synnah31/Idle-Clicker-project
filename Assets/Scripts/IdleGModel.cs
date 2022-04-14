@@ -36,11 +36,11 @@ public class IdleGModel
         money.Add(deltaMoney);
     }
 
+    //GetPriceUpgrade
     public IntObservable GetJoyPriceUpgrade()
     {
         return joyPriceUpgrade;
     }
-    
     public IntObservable GetSadPriceUpgrade()
     {
         return sadPriceUpgrade;
