@@ -109,6 +109,7 @@ public class IdleGModel
         angerPriceUpgrade = new IntObservable(500000);
         idleSpawnUpgrade = new IntObservable(10000);
         isSadMachineUnlock = new BoolObservable(false);
+        isIdleSpawnerUnlock = new BoolObservable(false);
     }
 
     public void UnlockSadMachine()

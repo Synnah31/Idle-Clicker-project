@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum EMOTION { JOY, SAD, FEAR, DISGUST, ANGER,
+    IDLE
+}
 public class GameManager : MonoBehaviour
 {
     public Text ClicksTotalText;
@@ -52,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     public int AutoClicksPerSecond;
     public int MinimumClicksToUnlockUpgrade;
-    
+    private bool _isUpgradeSeveralEmotions;
 
     public void AutoClickUpgrade()
     {
@@ -72,6 +75,7 @@ public class GameManager : MonoBehaviour
         _model.GetFearPriceUpgrade().Subscribe(_fearUpgradePriceView);
         _model.GetAngerPriceUpgrade().Subscribe(_disgustUpgradePriceView);
         _model.GetAngerPriceUpgrade().Subscribe(_angerUpgradePriceView);
+        _model.GetIsIdleSpawnerUnlock().Subscribe(_spawn);
         _buttonSpawn.onClick.AddListener(spawnEmotion);
         _joyMachineTrigger.Subscribe(OnTriggerEnterJoyMachine);
         _sadMachineTrigger.Subscribe(OnTriggerEnterSadMachine);
@@ -83,12 +87,18 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void OnUpgradeSeveralEmotions()
+    {
+        _isUpgradeSeveralEmotions = true;
+
+    }
     private void IdleSpawn()
     {
         if (_model.GetMoney().GetValue() >= _model.GetIdleSpawnUpgrade().GetValue())
         {
             _model.GetIsIdleSpawnerUnlock().SetValue(true);
             _model.AddMoney(-_model.GetIdleSpawnUpgrade().GetValue());
+
         }
     }
 
@@ -140,11 +150,18 @@ public class GameManager : MonoBehaviour
         posRandY = Random.Range(-1, -3);
         posSpawn = new Vector2(posRandX, posRandY);
         GameObject client = Instantiate(_client, posSpawn, Quaternion.identity);
+
+        client.GetComponent<ClientControl>().Init(_waypointsJoy, _waypointsSad, _waypointsFear, _waypointsDisgust, _waypointsAnger);
+        if (_isUpgradeSeveralEmotions && UnityEngine.Random.Range(0f,1f) < 0.25f )
+        {
+            client.GetComponent<ClientControl>().ChooseRandomEmotion();
+
+        }
+
         /*bool isSadMachineUp = false;
         bool isFearMachineUp = false;
         bool isDisgustMachineUp = false;
         bool isAngerMachineUp = false;*/
-        client.GetComponent<ClientControl>().Init(_waypointsJoy, _waypointsSad, _waypointsFear, _waypointsDisgust, _waypointsAnger);
     }
 
 

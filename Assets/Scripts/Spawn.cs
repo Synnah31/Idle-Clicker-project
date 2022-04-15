@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn : MonoBehaviour 
+public class Spawn : MonoBehaviour, IObserver<bool>
 {
     private IdleGModel _model;
     [SerializeField] private GameObject _waypointsJoy;
@@ -52,12 +53,27 @@ public class Spawn : MonoBehaviour
         if (Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnDeltaTime;
-            posRandX = Random.Range(-8, -6);
-            posRandY = Random.Range(0, 3);
+            posRandX = UnityEngine.Random.Range(-8, -6);
+            posRandY = UnityEngine.Random.Range(0, 3);
             posSpawn = new Vector2(posRandX, posRandY);
             GameObject client = Instantiate(Client, posSpawn, Quaternion.identity);
             client.GetComponent<ClientControl>().Init(_waypointsJoy, _waypointsSad, _waypointsFear, _waypointsDisgust, _waypointsAnger);
         }
+    }
+
+    public void OnCompleted()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnError(Exception error)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnNext(bool isIdleActive)
+    {
+        _isActive = isIdleActive;
     }
 }
 

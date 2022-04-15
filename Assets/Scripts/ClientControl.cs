@@ -101,7 +101,7 @@ public class ClientControl : MonoBehaviour
     int randomList;
     bool stop;
     [SerializeField] private Animator _animator;
-
+    private EMOTION _currentEmotion;
     private void Move()
     {
         if (!stop)
@@ -146,7 +146,12 @@ public class ClientControl : MonoBehaviour
 
     internal void TransformToJoy()
     {
-       _animator.SetBool("IsJoy", true);
+        _animator.SetBool("IsJoy", true);
+        if (_currentEmotion == EMOTION.JOY)
+        {
+            _animator.SetBool("IsJoyx2", true);
+
+        }
     }
 
     internal void TransformToSad()
@@ -166,6 +171,38 @@ public class ClientControl : MonoBehaviour
     internal void TransformToAnger()
     {
         _animator.SetBool("IsAngry", true);
+        if (_currentEmotion == EMOTION.ANGER)
+        {
+            _animator.SetBool("IsAngryx2", true);
+
+        }
+    }
+
+    internal void ChooseRandomEmotion()
+    {
+        Array values = Enum.GetValues(typeof(EMOTION));
+        System.Random random = new System.Random();
+        EMOTION RandomEmotion = (EMOTION)values.GetValue(random.Next(values.Length));
+        _currentEmotion = RandomEmotion;
+        switch (RandomEmotion)
+        {
+            case EMOTION.JOY:
+                _animator.SetBool("IsJoy", true);
+                break;
+            case EMOTION.SAD:
+                _animator.SetBool("IsSad", true);
+                break;
+            case EMOTION.FEAR:
+                _animator.SetBool("IsFear", true);
+                break;
+            case EMOTION.DISGUST:
+                _animator.SetBool("IsDisgust", true);
+                break;
+            case EMOTION.ANGER:
+                _animator.SetBool("IsAngry", true);
+                break;
+
+        }
     }
 }
 
