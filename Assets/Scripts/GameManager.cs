@@ -89,7 +89,12 @@ public class GameManager : MonoBehaviour
 
     public void OnUpgradeSeveralEmotions()
     {
-        _isUpgradeSeveralEmotions = true;
+        if (_model.GetMoney().GetValue() >= 50000)
+        {
+            _isUpgradeSeveralEmotions = true;
+            _model.AddMoney(-50000);
+        }
+        
 
     }
     private void IdleSpawn()
